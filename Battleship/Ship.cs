@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class Ship
+    public abstract class Ship
     {
         //member variables
-        int shipLength;
-        bool shipSunk;
+        public int shipLength;
+        public bool shipSunk;
+        public char shipSymbol;
         //constructor
+        
 
         //member methods
 

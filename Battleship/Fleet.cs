@@ -9,12 +9,15 @@ namespace Battleship
     class Fleet
     {
         //member variables
-
-        //constructor
-        public Fleet()
+        public List<Ship> fleetList = new List<Ship>
         {
-
-        }
+            new AircraftCarrier(),
+            new Battleship(),
+            new Destroyer(),
+            new Submarine()
+        };
+        //constructor
+        
 
         //member methods
     }

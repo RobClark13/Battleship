@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class AircraftCarrier:Ship
+    public class AircraftCarrier : Ship
     {
         //member variables
-        int shipLength = 5;
         
+
         //constructor
+        public AircraftCarrier()
+        {
+            shipLength = 5;
+            shipSunk = false;
+            shipSymbol = 'A';
+        }
 
         //member methods
     }

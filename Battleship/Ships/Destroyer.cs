@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class Destroyer
+    class Destroyer : Ship
     {
         //member variables
 
         //constructor
+        public Destroyer()
+        {
+            shipLength = 2;
+            shipSunk = false;
+            shipSymbol = 'D';
+        }
 
         //member methods
     }
