@@ -14,6 +14,7 @@ namespace Battleship
         //constructor
         public AircraftCarrier()
         {
+            shipName = "Aircraft Carrier";
             shipLength = 5;
             shipSunk = false;
             shipSymbol = 'A';

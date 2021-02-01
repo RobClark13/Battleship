@@ -9,6 +9,7 @@ namespace Battleship
     public abstract class Ship
     {
         //member variables
+        public string shipName;
         public int shipLength;
         public bool shipSunk;
         public char shipSymbol;

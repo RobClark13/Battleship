@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class GameBoard
+    public class GameBoard
     {
         //member variables
         public char[,] gameboard;
@@ -30,6 +30,26 @@ namespace Battleship
         }
 
         public void CheckBoard(int xCoor, int yCoor)
+        {
+            if (gameboard[xCoor,yCoor] == 'O')
+            {
+                gameboard[xCoor, yCoor] = miss;
+            }
+            else if (gameboard[xCoor, yCoor] == 'M' || gameboard[xCoor, yCoor] == 'H')
+                
+            {
+                Console.WriteLine("You already guessed this spot. Try Again");
+            }
+            else
+            {
+                gameboard[xCoor, yCoor] = hit;
+            }
+        }
+        public void ViewOppenentBoard()
+        {
+
+        }
+        public void ViewOwnBoard()
         {
 
         }

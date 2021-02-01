@@ -10,6 +10,9 @@ namespace Battleship
     {
         static void Main(string[] args)
         {
+            Player playerOne = new Player();
+
+            playerOne.AttackOpponentX();
             Console.SetBufferSize(800, 800);
 
             int me = 0;

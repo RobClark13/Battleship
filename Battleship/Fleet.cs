@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class Fleet
+    public class Fleet
     {
         //member variables
         public List<Ship> fleetList = new List<Ship>

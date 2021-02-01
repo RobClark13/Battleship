@@ -13,6 +13,7 @@ namespace Battleship
         //constructor
         public Destroyer()
         {
+            shipName = "Destroyer";
             shipLength = 2;
             shipSunk = false;
             shipSymbol = 'D';
