@@ -10,18 +10,21 @@ namespace Battleship
     {
         static void Main(string[] args)
         {
-            int[,] arr2d = new int[4, 4];
-            for (int y = 0; y < 4; y++)
+            Console.SetBufferSize(800, 800);
+
+            int me = 0;
+            int[,] arr2d = new int[20, 20];
+            for (int y = 0; y < 20; y++)
             {
-                for (int x = 0; x < 4; x++)
+                for (int x = 0; x < 20; x++)
                 {
-                    arr2d[x, y] = x+y;
+                    arr2d[x, y] = 0;
                 }
             }
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 20; i++)
             {
                 Console.Write("\n");
-                for (int j = 0; j < 4; j++)
+                for (int j = 0; j < 20; j++)
                 {
                     Console.Write("{0}\t", arr2d[i,j]);
                 }
